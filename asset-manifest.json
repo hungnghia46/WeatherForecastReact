@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/WeatherForecastReact/static/css/main.7e1c8a56.css",
-    "main.js": "/WeatherForecastReact/static/js/main.26226a1b.js",
-    "index.html": "/WeatherForecastReact/index.html",
-    "main.7e1c8a56.css.map": "/WeatherForecastReact/static/css/main.7e1c8a56.css.map",
-    "main.26226a1b.js.map": "/WeatherForecastReact/static/js/main.26226a1b.js.map"
+    "main.css": "/skytrack/static/css/main.7e1c8a56.css",
+    "main.js": "/skytrack/static/js/main.26226a1b.js",
+    "index.html": "/skytrack/index.html",
+    "main.7e1c8a56.css.map": "/skytrack/static/css/main.7e1c8a56.css.map",
+    "main.26226a1b.js.map": "/skytrack/static/js/main.26226a1b.js.map"
   },
   "entrypoints": [
     "static/css/main.7e1c8a56.css",
