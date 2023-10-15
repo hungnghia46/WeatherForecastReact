@@ -6,6 +6,8 @@ Run this project here:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+You can open the online web project here:
+Open []([http://localhost:3000](https://hungnghia46.github.io/WeatherForecastReact/)) to view it in your browser.
 
 In the project directory, you can run:
 
