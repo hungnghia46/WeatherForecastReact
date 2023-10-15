@@ -23,6 +23,7 @@ function App() {
   const getWeather = () => {
     axios.get("https://api.weatherapi.com/v1/current.json?key=5ca888f4d41040d895460808231510&q=Ho_Chi_Minh")
       .then((res) => {
+        console.log(res.data);
         setResult(res.data);
       })
       .catch((e) => {
