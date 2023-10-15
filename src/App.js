@@ -1,20 +1,22 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import "./App.css"
+
 function App() {
   const date = new Date();
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const dayName = days[date.getDay()];
-  const [time, setTime] = useState(date.toLocaleTimeString());
 
+  const [time, setTime] = useState(date.toLocaleTimeString('en-US', { timeStyle: 'medium', timeZone: 'Asia/Ho_Chi_Minh' }));
   const [result, setResult] = useState(null);
 
   useEffect(() => {
     getWeather();
     const interval = setInterval(() => {
       const currentTime = new Date();
-      setTime(currentTime.toLocaleTimeString());
+      setTime(currentTime.toLocaleTimeString('en-US', { timeStyle: 'medium', timeZone: 'Asia/Ho_Chi_Minh' }));
     }, 1000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -35,8 +37,7 @@ function App() {
       <div className='wave -three'></div>
       {result && (
         <div>
-          <div className="weathercon"><img className='icon' src={result.current.condition.icon} alt='icon'/></div>
-          
+          <div className="weathercon"><img className='icon' src={result.current.condition.icon} alt='icon' /></div>
           <div className="info">
             <h5 className='condition'>{result.current.condition.text}</h5>
             <h2 className="location">{result.location.name}</h2>
@@ -48,4 +49,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
